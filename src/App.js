@@ -209,19 +209,21 @@ class App extends Component {
           <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
         </div>
         {route === 'home' 
-          ? <div className='card shadow br3 ba b--white '>
-              <Rank 
-                name={this.state.user.name} 
-                entries={this.state.user.entries}
-              />
-              <ImageLinkForm 
-                onInputChange={this.onInputChange} 
-                onPictureSubmit={this.onPictureSubmit}
-              />
+          ? <div className='center flex flex-column justify-center'>
+              <div className='bg-dark-gray br3 ba white b--white mv4 w-100 w-75-m w-50-l mw6 center shadow pa4'>
+                <Rank 
+                  name={this.state.user.name} 
+                  entries={this.state.user.entries}
+                />
+                <ImageLinkForm 
+                  onInputChange={this.onInputChange} 
+                  onPictureSubmit={this.onPictureSubmit}
+                />
+              </div>
               <FaceRecognition box={box} imageUrl={imageUrl}/>
             </div>
           : (
-              route === 'signin'
+              (route === 'signin' || route === 'signout')
               ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
               : <SignUp loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )

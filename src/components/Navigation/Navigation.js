@@ -9,7 +9,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       }}>
         <p 
         onClick = { () => onRouteChange ('signout')}
-        className="pointer underline" 
+        className="pointer" 
         style = {{
           padding : '0',
           margin : '1rem'
@@ -24,14 +24,14 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       }}>
         <p 
         onClick = { () => onRouteChange ('signup')}
-        className="pointer underline" 
+        className="pointer" 
         style = {{
           padding : '0',
           margin : '1rem'
         }}>Sign Up</p>
                 <p 
         onClick = { () => onRouteChange ('signin')}
-        className="pointer underline" 
+        className="pointer" 
         style = {{
           padding : '0',
           margin : '1rem'

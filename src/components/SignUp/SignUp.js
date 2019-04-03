@@ -43,7 +43,7 @@ class SignUp extends React.Component {
 
   render() {
     return(
-      <article className="br3 ba white b--white mv4 w-100 w-50-m w-25-l mw6 center shadow">
+      <article className="bg-dark-gray br3 ba white b--white mv4 w-100 w-50-m w-25-l mw6 center shadow">
         <main className="pa4 white">
           <div action="sign-up_submit" method="get" acceptCharset="utf-8">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -52,7 +52,7 @@ class SignUp extends React.Component {
                 <label className="db fw4 lh-copy f6" htmlFor="name">Name</label>
                 <input 
                   onChange={this.onNameChange}
-                  className="pa2 input-reset ba b--white bg-transparent hover-bg-white hover-black w-100" 
+                  className="pa2 input-reset ba white b--white bg-transparent hover-bg-white hover-black w-100" 
                   type="text" 
                   name="name"  
                   id="name" 
@@ -62,7 +62,7 @@ class SignUp extends React.Component {
                 <label className="db fw4 lh-copy f6" htmlFor="email-address">Email address</label>
                 <input 
                   onChange={this.onEmailChange}
-                  className="pa2 input-reset ba b--white bg-transparent hover-bg-white hover-black w-100" 
+                  className="pa2 input-reset ba white b--white bg-transparent hover-bg-white hover-black w-100" 
                   type="email" 
                   name="email-address"  
                   id="email-address" 
@@ -72,7 +72,7 @@ class SignUp extends React.Component {
                 <label className="db fw4 lh-copy f6" htmlFor="password">Password</label>
                 <input 
                   onChange={this.onPasswordChange}
-                  className="b pa2 input-reset ba b--white bg-transparent hover-bg-white hover-black w-100" 
+                  className="b pa2 input-reset ba white b--white bg-transparent hover-bg-white hover-black w-100" 
                   type="password" 
                   name="password"  
                   id="password" 

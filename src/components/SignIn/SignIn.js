@@ -38,7 +38,7 @@ class SignIn extends React.Component {
   render() {
     const {onRouteChange} = this.props;
     return (
-      <article className="br3 ba white b--white mv4 w-100 w-50-m w-25-l mw6 center shadow" >
+      <article className="bg-dark-gray br3 ba white b--white mv4 w-100 w-50-m w-25-l mw6 center shadow" >
         <main className="pa4 white">
           <div className="measure">
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
@@ -47,7 +47,7 @@ class SignIn extends React.Component {
                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                 <input 
                 onChange={this.onEmailChange}
-                className="pa2 input-reset ba b--white bg-transparent hover-bg-white hover-black w-100" 
+                className="pa2 input-reset ba white b--white bg-transparent hover-bg-white hover-black w-100" 
                 type="email" 
                 name="email-address"  
                 id="email-address" />
@@ -56,7 +56,7 @@ class SignIn extends React.Component {
                 <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
                 <input 
                 onChange={this.onPasswordChange}
-                className="b pa2 input-reset ba b--white bg-transparent hover-bg-white hover-black w-100" 
+                className="b pa2 input-reset ba white b--white bg-transparent hover-bg-white hover-black w-100" 
                 type="password" 
                 name="password"  
                 id="password" />
